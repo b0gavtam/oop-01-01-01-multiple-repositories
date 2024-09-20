@@ -1,0 +1,15 @@
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\bin\Debug\net8.0\SchoolClassManagmentProject.exe
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\bin\Debug\net8.0\SchoolClassManagmentProject.deps.json
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\bin\Debug\net8.0\SchoolClassManagmentProject.runtimeconfig.json
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\bin\Debug\net8.0\SchoolClassManagmentProject.dll
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\bin\Debug\net8.0\SchoolClassManagmentProject.pdb
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\obj\Debug\net8.0\SchoolClassManagmentProject.GeneratedMSBuildEditorConfig.editorconfig
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\obj\Debug\net8.0\SchoolClassManagmentProject.AssemblyInfoInputs.cache
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\obj\Debug\net8.0\SchoolClassManagmentProject.AssemblyInfo.cs
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\obj\Debug\net8.0\SchoolClassManagmentProject.csproj.CoreCompileInputs.cache
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\obj\Debug\net8.0\SchoolClassManagmentProject.sourcelink.json
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\obj\Debug\net8.0\SchoolClassManagmentProject.dll
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\obj\Debug\net8.0\refint\SchoolClassManagmentProject.dll
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\obj\Debug\net8.0\SchoolClassManagmentProject.pdb
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\obj\Debug\net8.0\SchoolClassManagmentProject.genruntimeconfig.cache
+J:\2024-2025\C#\01-ismetles\oop-01-01-01-multiple-repositories\SchoolClassManagmentProject\obj\Debug\net8.0\ref\SchoolClassManagmentProject.dll
