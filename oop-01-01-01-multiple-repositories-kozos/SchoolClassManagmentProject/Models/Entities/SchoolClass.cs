@@ -11,27 +11,33 @@ namespace SchoolClassManagmentProject.Models.Entities
         private byte _grade;
         private char _gradeLetter;
         private byte _lastGrade;
+        private int _classMoney;
 
 
         public SchoolClass() { 
             Grade = byte.MinValue;
             GradeLetter = char.MinValue;
         }
-        public SchoolClass(byte grade, char gradeLetter, byte lastGrade = 0)
+        public SchoolClass(byte grade, char gradeLetter, byte lastGrade)
         {
             _grade = grade;
             _gradeLetter = gradeLetter;
             _lastGrade = lastGrade;
+            _classMoney = int.MinValue;
         }
         public byte Grade { get => _grade; set => _grade = value; }
         public char GradeLetter { get => _gradeLetter; set => _gradeLetter = value; }
-        public byte LastGrade { get => _grade; set => _lastGrade = value; }
-        //public string Name { get => $"{grade}.{gradeLetter}"; }
-
-        public string Name => $"{_grade}.{_gradeLetter}";
+        public byte LastGrade { get => _lastGrade; private set => _lastGrade = value; }
+        public string Name => $"{_grade}. {_gradeLetter}";
+        public int ClassMoney { get => _classMoney; private set => _classMoney = value; }
         public bool HasGraduated => _grade > _lastGrade;
-        public bool IsGraduating => _grade == _lastGrade;
+        public bool IsGraduate => _grade == _lastGrade;
         public bool IsActive => !HasGraduated;
+
+        public void SetClassMoney(int classMoney)
+        {
+            _classMoney = classMoney;
+        }
 
         public void SetLastGrade(byte newGrade)
         {
@@ -54,6 +60,10 @@ namespace SchoolClassManagmentProject.Models.Entities
         {
             Console.WriteLine($"{_grade}.{_gradeLetter} osztály megsemmimsítve.");
         }
-    
+        public override string ToString()
+        {
+            return $"{Grade}.{GradeLetter}";
+        }
+
     }
 }

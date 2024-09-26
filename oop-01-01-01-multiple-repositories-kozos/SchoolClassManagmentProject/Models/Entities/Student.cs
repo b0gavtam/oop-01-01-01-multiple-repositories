@@ -6,6 +6,7 @@ using System.Numerics;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using SchoolClassManagmentProject.Models.AppException;
 
 namespace SchoolClassManagmentProject.Models.Entities
 {
@@ -62,42 +63,23 @@ namespace SchoolClassManagmentProject.Models.Entities
         public string FirstName => _firstName = FirstName; 
         public DateTime BirthDate => _birthDate = BirthDate;
         public bool Gender => _gender = Gender;
-        public bool HasEmail()
-        {
-            if (_email != string.Empty)
-            {
-                return true;
-            }
-            return false;
-        }
-        public bool HasPhone()
-        {
-            if (_phone != string.Empty)
-            {
-                return true;
-            }
-            return false;
-        }
-        public string ChangeLastName(string newLastName)
-        {
-           return _lastName = newLastName;
+        public bool HasEmail => !string.IsNullOrEmpty(_email);
+        public bool HasPhone => !string.IsNullOrEmpty(_phone);
 
-        }
-        public string ChangeFirstName(string newFirstName)
+        public void SetEmail(string newEmail)
         {
-            return _firstName = newFirstName;
-
-        }
-        public bool ChangeGender(bool newGender)
-        {
-            return _gender = newGender;
-
+            if (newEmail == _email)
+                throw new EmailIsSameAsOldException();
+            else if (!newEmail.Contains("@"))
+                throw new EmailIsSameAsOldException();
+            else
+                _email = newEmail;
         }
         public int GetAge()
         {
-            if ( _birthDate.Date < DateTime.Now.Date)
+            if (DateTime.Now.Month <= _birthDate.Month && _birthDate.Day < DateTime.Now.Day)
             {
-                
+                return DateTime.Now.Year - _birthDate.Year - 1;
             }
                 return DateTime.Now.Year - _birthDate.Year;
 
